@@ -21,6 +21,7 @@ button {
   margin-left: 10px;
   margin-top: 40px;
   color: white;
+
 }
 
 input {
@@ -38,10 +39,11 @@ nav {
 }
 h4 {
   color: white;
-  font-size:50px;
+  font-size:43px;
 }
 #forgot {
   font-size: 12px;
+  text-transform: capitalize;
 }
 img {
   height: 80px;
