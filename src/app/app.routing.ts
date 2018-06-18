@@ -23,8 +23,6 @@ const appRoutes: Routes = [
     component: AccountComponent
   }
 
-  //kfjdjkl
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
