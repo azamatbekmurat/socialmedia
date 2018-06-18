@@ -1,19 +1,37 @@
-<<<<<<< HEAD
-=======
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="">Authentication Example</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li *ngIf="isLoggedIn"> \\if the user is logged in, we’ll show that user’s name along with an event binding to logout.
-        <a>{{userName}}</a>
-        <a (click)="logout()">Log out</a>
+<nav class="navbar navbar-expand-lg">
+  <h4><img src="https://cdn-cloudflare.pelfusion.com/wp-content/uploads/2013/04/facebook-logo.jpg" alt="logo"> Social Media</h4>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+
+
+
+      <li class="nav-item" id="input">
+
+        <div class="form-group">
+          <label for="password"><b><em>Username</em></b></label>
+          <input type="text" #password class="form-controll">
+
+        </div>
       </li>
-      <li *ngIf ="!isLoggedIn"> \\if the user isn’t logged in, we’ll have an event binding to login.
-        <a (click)="login()">Log in</a>
+      <li class="nav-item" id="input">
+
+        <div class="form-group">
+          <label for="password"><b><em>Password</em></b></label>
+          <input type="password" #password class="form-controll">
+          <a href=""><span id="forgot">Forgot Account?</span></a>
+        </div>
+
+      </li>
+      <li class="nav-item">
+
+        <button type="button" name="button">Log In</button>
+
       </li>
     </ul>
+
   </div>
 </nav>
->>>>>>> origin

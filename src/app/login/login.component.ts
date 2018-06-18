@@ -33,4 +33,7 @@ export class LoginComponent implements OnInit {
   logout() {
     this.authService.logout();
   }
+  LoginWithEmail(email,password){
+    this.authService.loginWithEmail(email, password);
+  }
 }
