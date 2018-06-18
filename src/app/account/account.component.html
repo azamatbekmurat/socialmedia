@@ -1,3 +1,3 @@
-<p>
-  account works!
-</p>
+<div *ngFor="let friend of userFriends | async">
+  <h3>{{friend.username}}</h3>
+</div>
