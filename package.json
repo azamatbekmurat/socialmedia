@@ -26,12 +26,9 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.4.1",
     "each-async": "^1.1.1",
-<<<<<<< HEAD
-    "firebase": "^3.9.0",
-=======
+
     "firebase": "^3.6.6",
     "popper.js": "^1.14.3",
->>>>>>> 432c64b3a8e92cae60b30cd056fa622f84a8da3c
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
