@@ -1,0 +1,12 @@
+{ "userAccounts": [{
+    "username": "Michael",
+    "email": "asdlfkj@gmail.com",
+    "password": "1111",
+    "friends": ["John", "Tom"]
+  }, {
+    "username": "Jessica",
+    "email": "222@gmail.com",
+    "password": "222",
+    "friends": ["Terry", "Frank"]
+  }]
+}
