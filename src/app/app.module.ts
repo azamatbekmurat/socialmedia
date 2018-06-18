@@ -9,7 +9,12 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { AccountsComponent } from './accounts/accounts.component';
+=======
+import { LoginComponent } from './login/login.component';
+import { AccountComponent } from './account/account.component';
+>>>>>>> 0a566c5afc4b98e201a47db713e5d779d5b20087
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +26,12 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     AccountsComponent
+=======
+    LoginComponent,
+    AccountComponent
+>>>>>>> 0a566c5afc4b98e201a47db713e5d779d5b20087
   ],
   imports: [
     BrowserModule,
