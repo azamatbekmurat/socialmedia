@@ -34,7 +34,7 @@ export class WelcomeComponent implements OnInit {
     this.authService.logout();
   }
   LoginWithEmail(email,password){
-    console.log("hello");
+   
     this.authService.loginWithEmail(email, password);
     
   }
