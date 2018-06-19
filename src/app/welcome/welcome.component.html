@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -55,43 +55,53 @@
     <div class="col-6">
       <h2 id="sign-up">Sign Up</h2>
       <p id="free-signup">It's free and always will be.</p>
-      <div class="row">
-        <div class="col-4">
-          <input type="text" id="input" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <div class="col-4" id="last">
-          <input type="text" id="input" class="form-control" placeholder="Last Name" aria-label="Password" aria-describedby="basic-addon1">
-        </div>
 
-      </div>
+
       <div class="row">
         <div class="col-12">
           <div class="form-group">
             <br>
-            <input id="credential" type="text" class="form-control" placeholder="Mobile number or email" aria-label="Mobile number or email" aria-describedby="basic-addon1">
+            <input #firstName id="credential" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
           <div class="form-group">
-            <input id="credential" type="text" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
+            <input #lastName id="credential" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
           </div>
         </div>
       </div>
       <div class="row">
-        <p id="bday-signup">Birthday</p>
+        <div class="col-12">
+          <div class="form-group">
+
+            <input #phone id="credential" type="text" class="form-control" placeholder="Mobile number or email" aria-label="Mobile number or email" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <input #password id="credential" type="text" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
       </div>
       <div class="row">
 
         <div class="col-6">
           <div class="form-group">
+            <label id="bday-signup" for="bday">Birthday</label>
             <input id="b-day" type="date" #date class="form-control">
+            <span ><a href="#" >Why do I need to provide my birthday? </a></span>
           </div>
         </div>
         <div class="col-6" id="bday">
           <div class="form-group">
-            <span ><a href="#" >Why do I need to provide my birthday? </a></span>
+
           </div>
         </div>
       </div>
