@@ -24,6 +24,11 @@ button {
 
 }
 
+img#facebook_img {
+  height: 100px;
+  width: 200px;
+}
+
 input {
   width: 150px;
   height: 24px;
@@ -48,4 +53,17 @@ h4 {
 img {
   height: 80px;
   width:100px;
+}
+footer {
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 60px;
+
+}
+li#logos.nav-item {
+  margin-left: 30px;
+  font-size: 30px;
 }
