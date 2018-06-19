@@ -12,6 +12,7 @@ export class RegistrationComponent implements OnInit {
   constructor(public authService: AuthenticationService) { }
 
   ngOnInit() {
+  // this.Signup("eric@gmail.com","helloyou");                                                        
   }
 
   Signup(email, password){

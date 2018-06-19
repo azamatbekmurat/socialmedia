@@ -13,7 +13,7 @@
 
         <div class="form-group">
           <label for="password"><b><em>Username</em></b></label>
-          <input type="text" #password class="form-controll">
+          <input type="text" #username class="form-controll">
 
         </div>
       </li>
@@ -28,9 +28,10 @@
       </li>
       <li class="nav-item">
 
-        <button type="button" name="button">Log In</button>
+        <button type="button" (click) = "LoginWithEmail(username.value, password.value)" name="button">Log In</button>
 
       </li>
+      
     </ul>
 
   </div>
