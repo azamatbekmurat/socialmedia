@@ -147,7 +147,7 @@ p#free-signup {
 
 }
 #last {
-  margin-left: 80px;
+  padding-right: 300px;
 }
 input#b-day {
   height: 40px;
@@ -166,7 +166,7 @@ input#b-day {
   color: #333;
   font-size: 19px;
   line-height: 126%;
-  margin-left: 12px;
+
 }
 
 #gender {
