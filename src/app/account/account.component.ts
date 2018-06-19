@@ -17,7 +17,7 @@ import { UsersService } from '../users.service';
 export class AccountComponent implements OnInit {
   userId: string;
   userPosts;
-  userAccount;
+  userName;
   userFriends;
 
   constructor(
@@ -33,11 +33,11 @@ export class AccountComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.userId=urlParameters['id'];
     });
-    this.userAccount = this.userService.getUserById(this.userId);
-    // console.log(this.userAccount.subscribe(keys => console.log("keys are", keys[0].username)));
-    // this.userFriends = this.userService.getFriendsOfThisUser(this.userAccount);
+    this.userService.getUserById(this.userId).subscribe(dataLastEmitted => {
+      console.log(dataLastEmitted.username);
+      this.userName = dataLastEmitted.username;
+    });
   }
-
 
 
 }
