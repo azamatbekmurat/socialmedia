@@ -34,7 +34,7 @@ export class AuthenticationService {
     return this.afAuth.auth.signInWithEmailAndPassword(email, password)
       .then((user) => {
         this.authState = user;
-        console.log(this.authState);
+        console.log(this.authState.uid);
       })
       .catch(error => {
         console.log(error);

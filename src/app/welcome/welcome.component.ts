@@ -27,15 +27,17 @@ export class WelcomeComponent implements OnInit {
 
   login() {
     this.authService.login();
-    this.router.navigate(['account', this.authService.user]);
+    this.router.navigate(['account', this.authService.authState.uid]);
   }
 
   logout() {
     this.authService.logout();
   }
   LoginWithEmail(email,password){
-   
+   console.log(email);
+   console.log(password);
     this.authService.loginWithEmail(email, password);
+    console.log(this.authService.user);
     
   }
   Signup(email, password){
