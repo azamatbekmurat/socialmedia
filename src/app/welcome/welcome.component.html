@@ -12,8 +12,8 @@
       <li class="nav-item" id="input">
 
         <div class="form-group">
-          <label for="password"><b><em>Username</em></b></label>
-          <input type="text" #password class="form-controll">
+          <label for="username"><b><em>Username</em></b></label>
+          <input id="login" type="text" #username class="form-controll">
 
         </div>
       </li>
@@ -21,7 +21,7 @@
 
         <div class="form-group">
           <label for="password"><b><em>Password</em></b></label>
-          <input type="password" #password class="form-controll">
+          <input id="login" type="password" #password class="form-controll">
           <a href=""><span id="forgot">Forgot Account?</span></a>
         </div>
 
@@ -51,6 +51,31 @@
     </div>
     <div class="col-6">
       <h2 id="sign-up">Sign Up</h2>
+      <p id="free-signup">It's free and always will be.</p>
+      <div class="row">
+        <div class="col-4">
+          <input type="text" id="input" class="form-control" placeholder="First Name" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="col-4" id="last">
+          <input type="text" id="input" class="form-control" placeholder="Last Name" aria-label="Password" aria-describedby="basic-addon1">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <br>
+            <input id="credential" type="text" class="form-control" placeholder="First Name" aria-label="Mobile number or email" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <input id="credential" type="text" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
