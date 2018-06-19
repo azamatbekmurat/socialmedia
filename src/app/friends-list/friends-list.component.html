@@ -1,6 +1,9 @@
 <p>
   friends-list works!
 </p>
-<div *ngFor="let friend of friends">{{friend.userName}}
 
+<div *ngIf="friends">
+  <div *ngFor="let friend of friends">
+    {{friend}}
+  </div>
 </div>
