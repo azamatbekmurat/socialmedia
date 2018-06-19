@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-  <h4><img src="http://fredly.fhs.no/wp-content/uploads/2017/01/new-facebook-logo-2015.png" alt="logo" id="facebook_img"></h4>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,6 +7,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
 
+      <li class="nav-item">
+        <img src="http://fredly.fhs.no/wp-content/uploads/2017/01/new-facebook-logo-2015.png" alt="logo" id="facebook_img">
+      </li>
 
 
       <li class="nav-item" id="input">
@@ -65,7 +68,7 @@
         <div class="col-12">
           <div class="form-group">
             <br>
-            <input id="credential" type="text" class="form-control" placeholder="First Name" aria-label="Mobile number or email" aria-describedby="basic-addon1">
+            <input id="credential" type="text" class="form-control" placeholder="Mobile number or email" aria-label="Mobile number or email" aria-describedby="basic-addon1">
           </div>
         </div>
       </div>
@@ -73,6 +76,50 @@
         <div class="col-12">
           <div class="form-group">
             <input id="credential" type="text" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p id="bday-signup">Birthday</p>
+      </div>
+      <div class="row">
+
+        <div class="col-6">
+          <div class="form-group">
+            <input id="b-day" type="date" #date class="form-control">
+          </div>
+        </div>
+        <div class="col-6" id="bday">
+          <div class="form-group">
+            <span ><a href="#" >Why do I need to provide my birthday? </a></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+              <label id="gender" class="radio-inline">
+                <input  type="radio" name="optradio"> Female
+              </label>
+              <label id="gender" class="radio-inline">
+                <input  type="radio" name="optradio"> Male
+              </label>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <p id="consent" class="_58mv">By clicking Sign Up, you agree to our <a href="/legal/terms/update" id="terms-link" target="_blank" rel="nofollow">Terms</a>, <a href="/about/privacy/update" id="privacy-link" target="_blank" rel="nofollow">Data Policy</a> and <a href="/policies/cookies/" id="cookie-use-link" target="_blank" rel="nofollow">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <button id="signup" type="button" name="button">Sign Up</button>
           </div>
         </div>
       </div>

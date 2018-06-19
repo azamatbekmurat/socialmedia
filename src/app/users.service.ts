@@ -8,7 +8,7 @@ export class UsersService {
 
 
   constructor(private database: AngularFireDatabase) {
-    this.users = database.list('users');
+    this.users = database.list('userAccounts');
   }
 
   getUsers(){
@@ -16,9 +16,9 @@ export class UsersService {
   }
 
   getUserById(userId: string){
-    return this.database.object('users/' + userId);
+    return this.database.object('userAccounts/' + userId);
   }
-  // 
+  //
   // getFriendsOfThisUser(user: User){
   //   var output;
   //   for (var key in user.friends){

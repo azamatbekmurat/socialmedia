@@ -10,14 +10,14 @@ export class FriendsService {
 
   constructor(private database: AngularFireDatabase) {
       this.friends = database.list('connections');
-      console.log(this.friends);
+      // console.log(this.friends);
   }
 
   getFriendsOfThisUser(userId: string) {
     let output: string[] = [];
     this.friends.subscribe(data => {
       data.forEach(connection => {
-          console.log(connection);
+          //console.log(connection);
           if (connection.user1key == userId) {
             output.push(connection.user2key);
           } else if (connection.user2key==userId) {
@@ -25,7 +25,7 @@ export class FriendsService {
           }
       })
   });
-  setTimeout(function(){console.log(output);}, 300);
+  // setTimeout(function(){console.log(output);}, 300);
   return output;
   }
 
