@@ -1,4 +1,4 @@
 export class User {
-  friends: string[];
+  // friends: string[];
   constructor(public username: string, public email: string, public password: string){}
 }

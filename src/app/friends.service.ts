@@ -1,27 +1,32 @@
-// import { Injectable } from '@angular/core';
-// import { User } from './user.model';
-// import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import { Injectable } from '@angular/core';
+import { User } from './user.model';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 // import { Connection } from './connection.model';
-//
-// @Injectable()
-// export class FriendsService {
-//   friends: FirebaseListObservable<any[]>;
-//
-//
-//   constructor(private database: AngularFireDatabase) {
-//       this.friends = database.list('friends');
-//   }
-//
-//   getFriendsOfThisUser(userId: string){
-//     let output: FirebaseListObservable<any[]>;
-//     for (var friend in this.friends) {
-//       if (friend.key1==userId) {
-//         output.push(friend.key2);
-//       } else if (friend.key2==userId) {
-//         output.push(friend.key1);
-//       }
-//     }
-//     return output;
-//   }
-//
-// }
+
+@Injectable()
+export class FriendsService {
+  friends: FirebaseListObservable<any[]>;
+
+
+  constructor(private database: AngularFireDatabase) {
+      this.friends = database.list('connections');
+      console.log(this.friends);
+  }
+
+  getFriendsOfThisUser(userId: string) {
+    let output: string[] = [];
+    this.friends.subscribe(data => {
+      data.forEach(connection => {
+          console.log(connection);
+          if (connection.user1key == userId) {
+            output.push(connection.user2key);
+          } else if (connection.user2key==userId) {
+            output.push(connection.user1key);
+          }
+      })
+  });
+  setTimeout(function(){console.log(output);}, 300);
+  return output;
+  }
+
+}

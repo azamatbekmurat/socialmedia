@@ -1,4 +1,4 @@
-{ "userAccounts": [{
+[{
     "username": "Michael",
     "email": "asdlfkj@gmail.com",
     "password": "1111",
@@ -9,4 +9,3 @@
     "password": "222",
     "friends": ["Terry", "Frank"]
   }]
-}

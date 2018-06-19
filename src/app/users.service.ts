@@ -18,14 +18,14 @@ export class UsersService {
   getUserById(userId: string){
     return this.database.object('users/' + userId);
   }
-
-  getFriendsOfThisUser(user: User){
-    var output;
-    for (var key in user.friends){
-      output.push(this.getUserById(key));
-    }
-    return output;
-
-  }
+  // 
+  // getFriendsOfThisUser(user: User){
+  //   var output;
+  //   for (var key in user.friends){
+  //     output.push(this.getUserById(key));
+  //   }
+  //   return output;
+  //
+  // }
 
 }

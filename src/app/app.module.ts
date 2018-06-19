@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { FriendsListComponent } from './friends-list/friends-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     LoginComponent,
     AccountComponent,
     WelcomeComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    FriendsListComponent
   ],
   imports: [
     BrowserModule,

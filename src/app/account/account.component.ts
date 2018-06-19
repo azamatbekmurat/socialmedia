@@ -34,8 +34,8 @@ export class AccountComponent implements OnInit {
       this.userId=urlParameters['id'];
     });
     this.userAccount = this.userService.getUserById(this.userId);
-    console.log(this.userAccount.subscribe(keys => console.log("keys are", keys[0].username)));
-    this.userFriends = this.userService.getFriendsOfThisUser(this.userAccount);
+    // console.log(this.userAccount.subscribe(keys => console.log("keys are", keys[0].username)));
+    // this.userFriends = this.userService.getFriendsOfThisUser(this.userAccount);
   }
 
 

@@ -1,12 +1,13 @@
 import { Component,OnInit } from '@angular/core';
 import { AuthenticationService } from '../authentication.service';
 import { Router } from '@angular/router';
+import { FriendsService } from '../friends.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers:[AuthenticationService]
+  providers:[AuthenticationService, FriendsService]
 })
 export class LoginComponent implements OnInit {
   user;
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
   private userName: String;
   ngOnInit() {
   }
-  constructor(private router: Router, public authService: AuthenticationService) {
+  constructor(private router: Router, public authService: AuthenticationService, public friendsService: FriendsService) {
     this.authService.user.subscribe(user => {
       if (user == null) {
         this.isLoggedIn = false;
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
         this.userName = user.displayName;
       }
     });
+    // let item = this.friendsService.getFriendsOfThisUser(0);
   }
 
   login() {
