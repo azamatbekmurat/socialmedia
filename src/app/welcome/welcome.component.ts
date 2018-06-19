@@ -27,7 +27,8 @@ export class WelcomeComponent implements OnInit {
 
   login() {
     this.authService.login();
-    this.router.navigate(['account', this.authService.authState.uid]);
+    
+    
   }
 
   logout() {
