@@ -28,8 +28,16 @@ img#facebook_img {
   height: 100px;
   width: 200px;
 }
-
-input {
+input#input.form-control {
+  height: 40px;
+  width: 250px;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 0;
+}
+input#login {
   width: 150px;
   height: 24px;
 
@@ -38,6 +46,15 @@ input {
   margin-left: 10px;
   margin-top: 20px;
   color: white;
+}
+input#credential {
+  height: 40px;
+  width: 512px;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 0;
 }
 nav {
     background-color: #3b5998;
@@ -98,4 +115,13 @@ h2 {
 }
 .sub-info {
   color: #666;
+}
+p#free-signup {
+  color: #333;
+  font-size: 19px;
+  line-height: 126%;
+
+}
+#last {
+  margin-left: 80px;
 }
