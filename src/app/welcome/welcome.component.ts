@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   providers:[AuthenticationService]
 })
 export class WelcomeComponent implements OnInit {
-  user;
+  
   private isLoggedIn: Boolean;
   private userName: String;
   ngOnInit() {
@@ -27,7 +27,7 @@ export class WelcomeComponent implements OnInit {
 
   login() {
     this.authService.login();
-    this.router.navigate(['account', this.user.$key]);
+    this.router.navigate(['account', this.authService.user]);
   }
 
   logout() {
@@ -38,4 +38,8 @@ export class WelcomeComponent implements OnInit {
     this.authService.loginWithEmail(email, password);
     
   }
+  Signup(email, password){
+    this.authService.signUpWithEmail(email,password)
+  }
+
 }
