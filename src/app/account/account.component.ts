@@ -32,6 +32,7 @@ export class AccountComponent implements OnInit {
     // console.log("hello");
     this.route.params.forEach((urlParameters) => {
       this.userId=urlParameters['id'];
+      console.log(this.authenticationService.authState);
     });
     this.userService.getUserById(this.userId).subscribe(dataLastEmitted => {
       console.log(dataLastEmitted.username);
