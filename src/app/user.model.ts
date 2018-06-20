@@ -1,4 +1,3 @@
 export class User {
-  // friends: string[];
-  constructor(public username: string, public email: string, public password: string){}
+  constructor(public username: string, public userLastName: string, public email: string, public password: string, public userBirthDay: string, public userGender: string){}
 }

@@ -1,11 +1,22 @@
 [{
     "username": "Michael",
+    "userLastName": "John",
     "email": "asdlfkj@gmail.com",
     "password": "1111",
-    "friends": ["John", "Tom"]
+    "userBirthDay": "2018-01-07",
+    "userGender": "male"
   }, {
-    "username": "Jessica",
-    "email": "222@gmail.com",
-    "password": "222",
-    "friends": ["Terry", "Frank"]
+    "username": "Azamat",
+    "userLastName": "Murat",
+    "email": "dsf@gmail.com",
+    "password": "1111",
+    "userBirthDay": "2018-01-07",
+    "userGender": "male"
+  }, {
+    "username": "Jane",
+    "userLastName": "Mike",
+    "email": "sder@gmail.com",
+    "password": "1111",
+    "userBirthDay": "2018-01-07",
+    "userGender": "female"
   }]
