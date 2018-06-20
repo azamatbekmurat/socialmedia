@@ -23,9 +23,9 @@ export class FriendsService {
           } else if (connection.user2key === userId) {
             output.push(connection.user1key);
           }
-      })
+      });
   });
-  // setTimeout(function(){console.log(output);}, 300);
+  setTimeout(function(){console.log(output);}, 300);
   return output;
   }
 
