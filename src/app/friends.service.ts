@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from './user.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-// import { Connection } from './connection.model';
+
 
 @Injectable()
 export class FriendsService {
