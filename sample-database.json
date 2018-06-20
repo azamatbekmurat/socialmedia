@@ -19,4 +19,18 @@
     "password": "1111",
     "userBirthDay": "2018-01-07",
     "userGender": "female"
+  }, {
+    "username": "Tim",
+    "userLastName": "Mike",
+    "email": "sder@gmail.com",
+    "password": "1111",
+    "userBirthDay": "2018-01-07",
+    "userGender": "female"
+  }, {
+    "username": "Jim",
+    "userLastName": "sadf",
+    "email": "sder@gmail.com",
+    "password": "1111",
+    "userBirthDay": "2018-01-07",
+    "userGender": "female"
   }]

@@ -1,0 +1,14 @@
+
+<h2>List of all users</h2>
+
+<div *ngFor="let user of users | async"  class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{user.username}}</em> {{user.userLastName}}</h3>
+    <button (click)="addFriend(user.$key)" type="button" name="button">Add a friend</button>
+    <!-- <div *ngIf="currentRoute === '/admin'">
+      {{album.description}}
+      <hr>
+      <app-edit-album [selectedAlbum]="album"></app-edit-album>
+    </div> -->
+  </div>
+</div>

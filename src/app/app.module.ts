@@ -15,6 +15,7 @@ import { AccountComponent } from './account/account.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FriendsListComponent } from './friends-list/friends-list.component';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     AccountComponent,
     WelcomeComponent,
     RegistrationComponent,
-    FriendsListComponent
+    FriendsListComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,

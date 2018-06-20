@@ -25,7 +25,8 @@ export class AccountComponent implements OnInit {
     // private location: Location,
     private authenticationService: AuthenticationService,
     private postsService: PostsService,
-    private userService: UsersService
+    private userService: UsersService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -37,6 +38,10 @@ export class AccountComponent implements OnInit {
       console.log(dataLastEmitted.username);
       this.userName = dataLastEmitted.username;
     });
+  }
+
+  goToSearchList() {
+    this.router.navigate(['account', this.userId, 'search']);
   }
 
 

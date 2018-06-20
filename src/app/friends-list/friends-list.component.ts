@@ -30,8 +30,8 @@ export class FriendsListComponent implements OnInit {
 
     let friend;
     var that = this;
-    console.log("Hello");
     var foundFriendsKeys = this.friendsService.getFriendsOfThisUser(this.userId);
+    console.log(foundFriendsKeys);
     var componentScope = this;
 
     setTimeout(function(){
