@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'account',
     component: AccountComponent
+  },
+  {
+    path: 'account/:id/search',
+    component: SearchResultComponent
   },
   {
     path: 'account/:id',

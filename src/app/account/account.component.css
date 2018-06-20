@@ -1,0 +1,32 @@
+#inputText {
+  width: 700px;
+  border-raduis: 5px;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  padding-left: 10px;
+  font-size: 14px;
+  border: 0px;
+}
+.search-icon {
+  background-color: #f6f7f9;
+  height: 100%;
+  width: 50px;
+  text-align: center;
+  float: right;
+}
+
+.search-icon img {
+  height: 15px;
+  width:15px;
+  margin: 10% 0;
+}
+.facebook_logo {
+  height: 30px;
+  width:30px;
+  padding-right: 5px;
+  margin-left: 25%;
+}
+nav {
+    background-color: #3b5998;
+}
