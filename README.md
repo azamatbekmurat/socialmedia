@@ -1,27 +1,60 @@
 # Socialmedia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### The app to read news online. 06/21/2018
 
-## Development server
+#### By _**Azamat Bekmuratov, Eva Antipina, Eric Nicolas, Rio Atmadja and Alex Noble**_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5. This app is online social media and social networking service, which allows to build to connection with other people.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Link to Firebase Deployment of application
 
-## Build
+* .firebaseapp.com
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Setup/Installation Requirements
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Clone this repository to your desktop
+* Navigate to the root of the clone project in a terminal
+* Run '$npm install'
+* Create a database for this project on Google Firebase account
+* Create 'userAccounts', 'connections' and 'posts' nodes in Firebase database
+* Create a 'api-keys.ts' file at 'socialmedia/src/app' directory
+* In this file, input api-keys from Firebase in following format:
+    * export var masterFirebaseConfig = {
+          apiKey: [your api key],
+          authDomain: [your authDomain],
+          databaseURL: [your databaseURL],
+          projectId: [your projectId],
+          storageBucket: [your storageBucket],
+          messagingSenderId: [your messagingSenderId]
+      }
+* Run `$ng serve` for a dev server
+* Navigate to `http://localhost:4200/`
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Known Bugs
+
+No known bugs at this time.
+
+## Support and contact details
+
+Please feel free to contact at azaege@gmail.com with any suggestions or feedback.
+
+## Technologies Used
+
+* Angular
+* Node Pack Manager
+* Firebase
+* Bootstrap
+* HTML
+* CSS
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2018 **_Azamat Bekmuratov, Eva Antipina, Eric Nicolas, Rio Atmadja and Alex Noble**
