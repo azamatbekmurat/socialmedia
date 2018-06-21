@@ -130,7 +130,7 @@
         <div class="row">
           <div class="col-12">
             <div class="form-group">
-              <input #password1 id="credential" type="text" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
+              <input #password1 id="credential" type="password" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
             </div>
           </div>
         </div>
@@ -169,7 +169,7 @@
         <div class="row">
           <div class="col-12">
             <div class="form-group">
-              <button (click)="signup(email.value, password1.value); email.value=''; password1.value=''" id="signup" type="button" name="button">Create Account</button>
+              <button (click)="signup(email.value, password1.value); email.value=''; password1.value=''" id="signup" type="button" name="button">Create</button>
               <!-- <button (click)="Test()" id="signup" type="button" name="button">Sign Up</button> -->
             </div>
           </div>

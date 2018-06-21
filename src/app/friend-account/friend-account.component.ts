@@ -25,7 +25,7 @@ export class FriendAccountComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.userId=urlParameters['id'];
+      this.userId=urlParameters['id1'];
     });
     this.usersService.getUserById(this.userId).subscribe(dataLastEmitted => {
       console.log(dataLastEmitted.username);
