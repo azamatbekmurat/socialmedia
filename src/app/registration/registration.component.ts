@@ -23,7 +23,6 @@ export class RegistrationComponent implements OnInit {
 
   ngOnInit() {
     this.token = localStorage.fireBaseToken;
-    console.log("heyyyyyyy");
     console.log(this.token);
 
   }
@@ -49,7 +48,7 @@ export class RegistrationComponent implements OnInit {
    signup(email, password){
      this.authService.signUpWithEmail(email,password);
 
-  
+
    }
 
   //  Test(){
