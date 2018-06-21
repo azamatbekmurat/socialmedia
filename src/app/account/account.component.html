@@ -1,50 +1,94 @@
 
-<nav id="user-nav" class="navbar navbar-expand-lg ">
+  <nav id="user-nav" class="navbar navbar-expand-lg ">
 
-  <img class="facebook_logo" src="https://www.freeiconspng.com/uploads/facebook-f-logo-white-background-21.jpg" alt="logo">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <img class="facebook_logo" src="https://www.freeiconspng.com/uploads/facebook-f-logo-white-background-21.jpg" alt="logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
 
-      <li class="nav-item active">
-          <input type="text" id="inputText" placeholder="Search Facebook">
-      </li>
-      <li class="nav-item active">
-        <div class="search-icon">
-          <button (click)="goToSearchList()" type="button" name="button"><img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Search-icon.png"></button>
+        <li class="nav-item active">
+            <input type="text" id="inputText" placeholder="Search Facebook">
+        </li>
+        <li class="nav-item active">
+          <div class="search-icon">
+            <button (click)="goToSearchList()" type="button" name="button" id="search-button"><img src="http://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Search-icon.png"></button>
+          </div>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a class="nav-link" href="#"> | Home</a>
+       </li>
+       <li class="nav-item active">
+         <svg width=50 height=50 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image   xlink:href="https://www.shareicon.net/data/2017/05/24/886354_network_512x512.png" height="50" width="50"/></svg>
+       </li>
+       <li class="nav-item active" id="messenger">
+         <svg width=30 height=30 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image  xlink:href="https://www.shareicon.net/data/512x512/2016/07/08/117664_chat_512x512.png" height="30" width="30" /></svg>
+       </li>
+
+       <li class="nav-item active" id="earth">
+         <svg width=30 height=30 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image  xlink:href="https://image.flaticon.com/icons/png/512/44/44386.png" height="30" width="30"/></svg>
+       </li>
+       <li class="nav-item active" id="earth">
+         <svg width=30 height=30 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image  xlink:href="https://cdn.iconscout.com/public/images/icon/premium/png-512/dropdown-menu-option-select-choice-layout-interface-design-378ae938058084ea-512x512.png" height="30" width="30"/></svg>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="#"> | Log Out</a>
+       </li>
+
+
+     </ul>
+
+   </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2" id="side_bar">
+        <br><br><br>
+
+
+        <ul id="info-navbar">
+          <li>
+            <a href="javascript:void(0)" (click)="accountDetail()"><svg width=180 height=100 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image xlink:href="http://blogdailyherald.com/wp-content/uploads/2014/10/wallpaper-for-facebook-profile-photo.jpg" height="100" width="180"/></svg></a>
+          </li><br>
+          <li><b><a href="#" id="info-navbar">Home</a></b></li><br>
+          <li><b><a href="#" id="info-navbar">About</a></b></li><br>
+          <li><b><a href="#" id="info-navbar">Photos</a></b></li><br>
+          <li><b><a href="#" id="info-navbar">Likes</a></b></li><br>
+          <li><b><a href="#" id="info-navbar">Posts</a></b></li><br>
+        </ul>
+
+      </div>
+      <div class="col-10" id="profile">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <input id="comment" type="text" #comment placeholder="What's on your mind">
+              <button type="button" name="button">Post</button>
+            </div>
+          </div>
         </div>
-      </li>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
 
-    </ul>
-
-
-
+      </div>
+    </div>
   </div>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <ul class="navbar-nav mr-auto">
-     <li class="nav-item">
-       <a class="nav-link" href="#"> | Home</a>
-     </li>
-     <li class="nav-item active">
-       <svg width=50 height=50 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image   xlink:href="https://www.shareicon.net/data/2017/05/24/886354_network_512x512.png" height="50" width="50"/></svg>
-     </li>
-     <li class="nav-item active" id="messenger">
-       <svg width=30 height=30 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image  xlink:href="https://www.shareicon.net/data/512x512/2016/07/08/117664_chat_512x512.png" height="30" width="30" /></svg>
-     </li>
-     <li class="nav-item active" id="earth">
-       <svg width=30 height=30 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image  xlink:href="https://image.flaticon.com/icons/png/512/44/44386.png" height="30" width="30"/></svg>
-     </li>
 
 
-   </ul>
 
- </div>
-</nav>
 
-<div class="container">
-  <app-friends-list></app-friends-list>
 
-</div>
+
+<footer><a href="#"><u>About Us</u> | <u>Contact Us</u> | <u>Legal Agrements</u> | <u>Privacy</u> | <u>Fees</u> | <u>Site Feedback</u> </a></footer>
