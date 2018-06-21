@@ -30,16 +30,12 @@ export class AccountComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // console.log("hello");
     this.route.params.forEach((urlParameters) => {
-<<<<<<< HEAD
-      this.userId=urlParameters['id'];
-=======
       this.userId=urlParameters['id1'];
       console.log(this.authenticationService.authState);
->>>>>>> friendsAccounts
     });
     this.userService.getUserById(this.userId).subscribe(dataLastEmitted => {
+      console.log(dataLastEmitted.username);
       this.userName = dataLastEmitted.username;
     });
   }
@@ -47,8 +43,6 @@ export class AccountComponent implements OnInit {
   goToSearchList() {
     this.router.navigate(['account', this.userId, 'search']);
   }
- signout(){
-   this.authenticationService.logout();
- }
+
 
 }
