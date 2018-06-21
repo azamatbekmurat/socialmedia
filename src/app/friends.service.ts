@@ -10,12 +10,12 @@ export class FriendsService {
 
 
   constructor(private database: AngularFireDatabase) {
-      this.friends = database.list('connections');
+      this.friends = database.list('connections/');
       // console.log(this.friends);
   }
 
   getFriendsOfThisUser(userId: string) {
-    
+
     this.friends.subscribe(data => {
       data.forEach(connection => {
           console.log("hello");
@@ -35,6 +35,7 @@ export class FriendsService {
           }
       });
     });
+
   var that=this;
   setTimeout(function(){console.log(that.output);}, 300);
   console.log(this.output);

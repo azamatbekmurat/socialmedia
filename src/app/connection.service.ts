@@ -14,6 +14,6 @@ export class ConnectionService {
   }
 
   addConnection(newConnection: Connection) {
-   this.connections.push(newConnection);
- }
+    this.connections.push(newConnection);
+  }
 }
