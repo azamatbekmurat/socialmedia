@@ -33,6 +33,7 @@ export class SearchResultComponent implements OnInit {
   }
 
   addFriend(userKey: string) {
+    console.log("add friend called");
     let connection = new Connection(this.userId, userKey);
     this.connectionService.addConnection(connection);
     this.router.navigate(['account', this.userId]);
