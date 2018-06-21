@@ -45,7 +45,7 @@ button#login {
   background-color: #4267b2;
   border-color: #29487d;
   margin-left: 10px;
-  margin-top: 50px;
+  margin-top: 40px;
   color: white;
 
 }
@@ -57,7 +57,7 @@ img#facebook_img {
 }
 input#input.form-control {
   height: 40px;
-  width: 250px;
+  width: 200px;
   font-size: 18px;
   padding: 8px 10px;
   border-color: #bdc7d8;
