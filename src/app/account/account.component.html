@@ -42,7 +42,7 @@
          <svg width=30 height=30 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image  xlink:href="https://cdn.iconscout.com/public/images/icon/premium/png-512/dropdown-menu-option-select-choice-layout-interface-design-378ae938058084ea-512x512.png" height="30" width="30"/></svg>
        </li>
        <li class="nav-item">
-         <a class="nav-link" (click)="signout()"> | Log Out</a>
+         <a class="nav-link" (click)="logout()"> | Log Out</a>
        </li>
 
 
@@ -58,6 +58,9 @@
 
         <ul id="info-navbar">
           <li>
+            <h1>{{userName}}</h1>
+          </li>
+          <li>
             <a href="javascript:void(0)" (click)="accountDetail()"><svg width=180 height=100 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><image xlink:href="http://blogdailyherald.com/wp-content/uploads/2014/10/wallpaper-for-facebook-profile-photo.jpg" height="100" width="180"/></svg></a>
           </li><br>
           <li><b><a href="#" id="info-navbar">Home</a></b></li><br>
@@ -65,7 +68,9 @@
           <li><b><a href="#" id="info-navbar">Photos</a></b></li><br>
           <li><b><a href="#" id="info-navbar">Likes</a></b></li><br>
           <li><b><a href="#" id="info-navbar">Posts</a></b></li><br>
+          <li><b><a href="#" id="info-navbar">Friends:</a></b></li>
         </ul>
+        <app-friends-list></app-friends-list>
 
       </div>
       <app-post-list></app-post-list>
@@ -97,11 +102,6 @@
 
  </div>
 
-
-<div class="container">
-  <app-friends-list></app-friends-list>
-
-</div>
 
 
 <footer><a href="#"><u>About Us</u> | <u>Contact Us</u> | <u>Legal Agrements</u> | <u>Privacy</u> | <u>Fees</u> | <u>Site Feedback</u> </a></footer>

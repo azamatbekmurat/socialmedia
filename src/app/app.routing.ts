@@ -34,7 +34,7 @@ const appRoutes: Routes = [
     component: AccountComponent
   },
   {
-    path: 'account/:id/:friend',
+    path: 'account/:id/:id1',
     component: FriendAccountComponent
   },
   {
