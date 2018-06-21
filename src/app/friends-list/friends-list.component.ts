@@ -19,7 +19,7 @@ export class FriendsListComponent implements OnInit {
   friends: any[] = [];
 
 
-  constructor(private route: ActivatedRoute, private friendsService: FriendsService, private usersService: UsersService) { }
+  constructor(private route: ActivatedRoute, private friendsService: FriendsService, private usersService: UsersService, private router: Router) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -45,5 +45,9 @@ export class FriendsListComponent implements OnInit {
       console.log(componentScope.friends);
     }, 1000);
 
+  }
+
+  goToFriendAccount(friend: string) {
+    this.router.navigate(['account', this.userId, friend]);
   }
 }
