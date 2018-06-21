@@ -1,5 +1,5 @@
 #inputText {
-  width: 700px;
+  width: 500px;
   border-raduis: 5px;
   height: 100%;
   position: relative;
@@ -29,4 +29,12 @@
 }
 nav {
     background-color: #3b5998;
+}
+img#messenger {
+  margin-top: 20px;
+}
+a {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
 }
