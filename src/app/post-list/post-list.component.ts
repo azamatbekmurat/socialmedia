@@ -44,7 +44,7 @@ export class PostListComponent implements OnInit {
   commentPost(userpost: string) {
     let post = new Post(this.userId, userpost);
     this.postsService.addNewPost(post);
-    this.router.navigate(['account', this.userId]);
+    location.reload();
   }
 
 }
