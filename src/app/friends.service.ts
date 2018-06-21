@@ -26,6 +26,7 @@ export class FriendsService {
       });
   });
   setTimeout(function(){console.log(output);}, 300);
+  console.log(output);
   return output;
   }
 
