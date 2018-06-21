@@ -1,6 +1,6 @@
 #inputText {
   width: 500px;
-  border-raduis: 5px;
+
   height: 100%;
   position: relative;
   top: 0px;
@@ -8,12 +8,18 @@
   font-size: 14px;
   border: 0px;
 }
+nav#user-nav {
+  border: 2px solid black;
+  width: 100%;
+}
+
 .search-icon {
   background-color: #f6f7f9;
   height: 100%;
   width: 50px;
   text-align: center;
   float: right;
+
 }
 
 .search-icon img {
@@ -30,11 +36,95 @@
 nav {
     background-color: #3b5998;
 }
-img#messenger {
-  margin-top: 20px;
+li#messenger {
+  margin-top: 12px;
+  margin-left: 2px;
+}
+
+li#earth {
+  margin-top: 12px;
+  margin-left: 10px;
 }
 a {
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 15px;
   margin-top: 10px;
+}
+footer {
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  font-size: 12px;
+  margin-left: 10%;
+}
+#side_bar {
+  padding-top: 20px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #f8f9fa;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  font-family: "pp-sans-small-regular",Helvetica Neue,Arial,sans-serif;
+  font-weight: normal;
+  font-variant: normal;
+  margin-left: 15px;
+  margin-top: 75px;
+
+}
+#profile {
+  margin-left: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#info-navbar {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+input#comment {
+  height: 200px;
+  width: 1000px;
+  border: 2px solid black;
+  padding-left: 50%;
+  font-size: 30px;
+  padding-left: 20px;
+
+}
+button#post {
+  width: 195px;
+  height: 40px;
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  padding: 7px 20px;
+  text-align: center;
+  font-size: 19px;
+  font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+  font-weight: bold !important;
+  letter-spacing: normal;
+  text-rendering: optimizelegibility;
+  border: 1px solid;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  margin-top: 10px;
+  margin-left: 800px;
 }

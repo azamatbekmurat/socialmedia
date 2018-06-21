@@ -1,0 +1,185 @@
+<nav class="navbar navbar-expand-lg">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+
+      <li class="nav-item">
+        <img src="http://fredly.fhs.no/wp-content/uploads/2017/01/new-facebook-logo-2015.png" alt="logo" id="facebook_img">
+      </li>
+
+
+      <li class="nav-item" id="input">
+
+        <div class="form-group">
+          <label for="username"><b><em>Username</em></b></label>
+          <input id="login" type="text" #username class="form-controll">
+
+        </div>
+      </li>
+      <li class="nav-item" id="input">
+
+        <div class="form-group">
+          <label for="password"><b><em>Password</em></b></label>
+          <input id="login" type="password" #password class="form-controll">
+          <a href=""><span id="forgot">Forgot Account?</span></a>
+        </div>
+
+      </li>
+      <li class="nav-item">
+
+        <button id="login" type="button" (click) = "LoginWithEmail(username.value, password.value)" name="button">Log In</button>
+
+      </li>
+    </ul>
+
+  </div>
+
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 ">
+      <h2>Connect with friends and the world around you on Facebook</h2>
+      <div class="infos">
+        <img class="img" src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.2365-6/32964924_188362901982436_5189181917978689536_n.png?_nc_cat=1&amp;oh=fa755c1841da8e7c918446657f677339&amp;oe=5BBC9CA3" width="56" height="56" alt="" style="vertical-align: middle"><b> See photos and updates</b> <span class="sub-info">from friends in News Feed.</span><br><br>
+      </div>
+      <div class="infos">
+        <img class="img" src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.2365-6/32967637_1400301410075884_2994305350271762432_n.png?_nc_cat=1&amp;oh=f21d9bf8b067eba0d61bcf3ff1a7a1d7&amp;oe=5BBF89B0" width="56" height="56" alt="" style="vertical-align: middle"><b> Share what's new </b> <span class="sub-info">in your life on your TimeLine.</span><br><br>
+      </div>
+      <div class="infos">
+        <img class="img" src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.2365-6/33137320_1687624661315903_5362007326045765632_n.png?_nc_cat=1&amp;oh=283c4d474e6b4e3bbf3c0f907d1d3f32&amp;oe=5BB09405" width="56" height="56" alt="" style="vertical-align: middle"><b> Find More</b> <span class="sub-info">of whay you're looking for for with Facebook Search.</span><br><br>
+      </div>
+    </div>
+    <div class="col-6">
+      <h2 id="sign-up">Sign Up</h2>
+      <p id="free-signup">It's free and always will be.</p>
+
+
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <br>
+            <input #firstName id="credential" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <input #lastName id="credential" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+
+            <input #phone id="credential" type="text" class="form-control" placeholder="Mobile number or email" aria-label="Mobile number or email" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <input #password1 id="credential" type="text" class="form-control" placeholder="New password" aria-label="New Password" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
+      <div class="row">
+
+        <div class="col-6">
+          <div class="form-group">
+            <label id="bday-signup" for="bday">Birthday</label>
+            <input id="b-day" type="date" #date class="form-control">
+            <span ><a href="#" >Why do I need to provide my birthday? </a></span>
+          </div>
+        </div>
+        <div class="col-6" id="bday">
+          <div class="form-group">
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+              <label id="gender" class="radio-inline">
+                <input  type="radio" name="optradio"> Female
+              </label>
+              <label id="gender" class="radio-inline">
+                <input  type="radio" name="optradio"> Male
+              </label>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <p id="consent" class="_58mv">By clicking Sign Up, you agree to our <a href="/legal/terms/update" id="terms-link" target="_blank" rel="nofollow">Terms</a>, <a href="/about/privacy/update" id="privacy-link" target="_blank" rel="nofollow">Data Policy</a> and <a href="/policies/cookies/" id="cookie-use-link" target="_blank" rel="nofollow">Cookies Policy</a>. You may receive SMS Notifications from us and can opt out any time.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <button id="signup" type="button" name="button">Sign Up</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <hr class="my-4">
+            <div id="reg_pages_msg" class="_58mk"><a href="/pages/create/?ref_type=registration_form">Create a Page</a> for a celebrity, band or business.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" id="bottom-info">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-inline" style="text-align:center">
+        <li class="list-inline-item">English (US)</li>
+        <li class="list-inline-item" ><a class="_sv4" dir="ltr" href="https://es-la.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;es_LA&quot;, &quot;en_US&quot;, &quot;https:\/\/es-la.facebook.com\/&quot;, &quot;www_list_selector&quot;, 0); return false;" title="Spanish">Español</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://fr-fr.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;fr_FR&quot;, &quot;en_US&quot;, &quot;https:\/\/fr-fr.facebook.com\/&quot;, &quot;www_list_selector&quot;, 1); return false;" title="French (France)">Français (France)</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://zh-cn.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;zh_CN&quot;, &quot;en_US&quot;, &quot;https:\/\/zh-cn.facebook.com\/&quot;, &quot;www_list_selector&quot;, 2); return false;" title="Simplified Chinese (China)">中文(简体)</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="rtl" href="https://ar-ar.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ar_AR&quot;, &quot;en_US&quot;, &quot;https:\/\/ar-ar.facebook.com\/&quot;, &quot;www_list_selector&quot;, 3); return false;" title="Arabic">العربية</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://pt-br.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;pt_BR&quot;, &quot;en_US&quot;, &quot;https:\/\/pt-br.facebook.com\/&quot;, &quot;www_list_selector&quot;, 4); return false;" title="Portuguese (Brazil)">Português (Brasil)</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://it-it.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;it_IT&quot;, &quot;en_US&quot;, &quot;https:\/\/it-it.facebook.com\/&quot;, &quot;www_list_selector&quot;, 5); return false;" title="Italian">Italiano</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://ko-kr.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ko_KR&quot;, &quot;en_US&quot;, &quot;https:\/\/ko-kr.facebook.com\/&quot;, &quot;www_list_selector&quot;, 6); return false;" title="Korean">한국어</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://de-de.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;de_DE&quot;, &quot;en_US&quot;, &quot;https:\/\/de-de.facebook.com\/&quot;, &quot;www_list_selector&quot;, 7); return false;" title="German">Deutsch</a></li>
+        <li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://hi-in.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;hi_IN&quot;, &quot;en_US&quot;, &quot;https:\/\/hi-in.facebook.com\/&quot;, &quot;www_list_selector&quot;, 8); return false;" title="Hindi">हिन्दी</a></li><li class="list-inline-item"><a class="_sv4" dir="ltr" href="https://ja-jp.facebook.com/" onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ja_JP&quot;, &quot;en_US&quot;, &quot;https:\/\/ja-jp.facebook.com\/&quot;, &quot;www_list_selector&quot;, 9); return false;" title="Japanese">日本語</a></li>
+        <li class="list-inline-item"><a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog" ajaxify="/settings/language/language/?uri=https%3A%2F%2Fja-jp.facebook.com%2F&amp;source=www_list_selector_more" href="#" title="Show more languages"><i class="img sp_69ybFt0NtBg_2x sx_23380e"></i></a></li></ul>
+    </div>
+  </div>
+
+</div>
+<footer>
+  <nav class="navbar navbar-expand-lg navbar fixed-bottom">
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto" >
+        <li class="nav-item ion-social-googleplus" id="logos">
+        </li>
+        <li class="nav-item ion-social-facebook" id="logos">
+        </li>
+        <li class="nav-item ion-social-twitter" id="logos">
+
+        </li>
+        <li class="nav-item ion-social-instagram" id="logos"></li>
+      </ul>
+
+    </div>
+  </nav>
+</footer>
