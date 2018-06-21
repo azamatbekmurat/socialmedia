@@ -17,6 +17,7 @@ import { FriendsListComponent } from './friends-list/friends-list.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { FriendAccountComponent } from './friend-account/friend-account.component';
+import { MessengerComponent } from './messenger/messenger.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     FriendsListComponent,
     SearchResultComponent,
     PostListComponent,
-    FriendAccountComponent
+    FriendAccountComponent,
+    MessengerComponent
   ],
   imports: [
     BrowserModule,

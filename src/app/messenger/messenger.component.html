@@ -1,0 +1,12 @@
+<div class="row columns">
+  
+
+  <input type="text" id="message" placeholder="Chat here..." (keyup.enter)="chatSend($event.target.value)" [(ngModel)]="message" />
+
+  <div *ngFor="let message of messages | async">
+    <div class="card" style="width: 18rem;">
+
+    <div>{{message.message}}</div> 
+    
+  </div>
+  </div>
