@@ -8,7 +8,11 @@
       <div *ngIf="posts">
         <h2>Posts:</h2>
         <div *ngFor="let post of posts">
-          {{post}}
+          <div class="row" id="user-comment">
+            <div class="col-12">
+              <p><span id="user-post">{{post}}</span></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
