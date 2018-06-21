@@ -1,6 +1,6 @@
 
 <div *ngIf="friends">
-  <div *ngFor="let friend of friends" (click)="goToFriendAccount(friend)">
-    {{friend}}
+  <div *ngFor="let friend of friends" (click)="goToFriendAccount(friend.key)">
+    {{friend.name}}
   </div>
 </div>

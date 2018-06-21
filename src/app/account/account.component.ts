@@ -32,7 +32,7 @@ export class AccountComponent implements OnInit {
   ngOnInit() {
     // console.log("hello");
     this.route.params.forEach((urlParameters) => {
-      this.userId=urlParameters['id'];
+      this.userId=urlParameters['id1'];
       console.log(this.authenticationService.authState);
     });
     this.userService.getUserById(this.userId).subscribe(dataLastEmitted => {
