@@ -1,6 +1,8 @@
-# Socialmedia
+# Socialmedia 
 
-#### The app to read news online. 06/21/2018
+### 06/21/2018
+
+#### This is a social networking website, where you can add friend connections, write wall posts, and send messages
 
 #### By _**Azamat Bekmuratov, Eva Antipina, Eric Nicolas, Rio Atmadja and Alex Noble**_
 
@@ -34,8 +36,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
           storageBucket: [your storageBucket],
           messagingSenderId: [your messagingSenderId]
       }
-* Run `$ng serve` for a dev server
-* Navigate to `http://localhost:4200/`
+* Run `ng serve --open` and a development server should load in your default browser.
+* If the browser doesn't load, you can navigate to `http://localhost:4200/`
 
 ## Further help
 
@@ -51,9 +53,9 @@ Please feel free to contact at azaege@gmail.com with any suggestions or feedback
 
 ## Technologies Used
 
-* Angular
-* Node Pack Manager
-* Firebase
+* AngularJS
+* Node Package Manager
+* Google Firebase
 * Bootstrap
 * HTML
 * CSS
@@ -62,4 +64,4 @@ Please feel free to contact at azaege@gmail.com with any suggestions or feedback
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2018 **_Azamat Bekmuratov, Eva Antipina, Eric Nicolas, Rio Atmadja and Alex Noble**
+Copyright (c) 2018 **_Azamat Bekmuratov, Eva Antipina, Eric Nicolas, Rio Atmadja and Alex Noble_**
