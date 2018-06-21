@@ -22,6 +22,7 @@ export class AuthenticationService {
   logout() {
     localStorage.setItem('fireBaseToken', null );
     this.afAuth.auth.signOut();
+    this.routes.navigate(['']);
   }
   signUpWithEmail(email: string, password: string) {
     return this.afAuth.auth.createUserWithEmailAndPassword(email, password)

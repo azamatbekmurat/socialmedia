@@ -42,6 +42,8 @@ export class AccountComponent implements OnInit {
   goToSearchList() {
     this.router.navigate(['account', this.userId, 'search']);
   }
-
+ signout(){
+   this.authenticationService.logout();
+ }
 
 }
