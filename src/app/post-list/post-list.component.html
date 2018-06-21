@@ -3,7 +3,7 @@
     <div class="col-12">
       <div class="form-group">
         <input id="comment" type="text" #comment placeholder="What's on your mind">
-        <button (click)="commentPost(comment)" type="button" name="button" id="post">Post</button>
+        <button (click)="commentPost(comment.value); comment.value=''" type="button" name="button" id="post">Post</button>
       </div>
       <div *ngIf="posts">
         <h2>Posts:</h2>
