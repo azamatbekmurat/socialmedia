@@ -33,7 +33,7 @@ const appRoutes: Routes = [
     component: AccountComponent
   },
   {
-    path: 'account/:id/:friend',
+    path: 'account/:id1/:id',
     component: FriendAccountComponent
   }
 
