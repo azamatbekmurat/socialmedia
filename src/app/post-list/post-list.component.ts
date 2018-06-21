@@ -18,7 +18,11 @@ export class PostListComponent implements OnInit {
   userId: string;
   posts: any[] = [];
 
-  constructor(private route: ActivatedRoute, private postsService: PostsService, private usersService: UsersService) { }
+  constructor(private route: ActivatedRoute,
+    private postsService: PostsService,
+    private usersService: UsersService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -40,6 +44,7 @@ export class PostListComponent implements OnInit {
   commentPost(userpost: string) {
     let post = new Post(this.userId, userpost);
     this.postsService.addNewPost(post);
+    this.router.navigate(['account', this.userId]);
   }
 
 }
