@@ -1,3 +1,3 @@
 export class Connection {
-  constructor(public user1Key: string, public user2Key: string){}
+  constructor(public user1key: string, public user2key: string){}
 }
