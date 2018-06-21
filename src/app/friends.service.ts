@@ -15,7 +15,7 @@ export class FriendsService {
   }
 
   getFriendsOfThisUser(userId: string) {
-    
+
     this.friends.subscribe(data => {
       data.forEach(connection => {
           console.log("hello");
@@ -35,16 +35,11 @@ export class FriendsService {
           }
       });
     });
-<<<<<<< HEAD
 
-    setTimeout(function(){console.log(output);}, 300);
-    return output;
-=======
   var that=this;
   setTimeout(function(){console.log(that.output);}, 300);
   console.log(this.output);
   return this.output;
->>>>>>> 9eaa81f7a199ac1fadbc4c85a969d4186a8654b4
   }
 
 }
