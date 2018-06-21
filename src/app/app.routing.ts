@@ -5,6 +5,7 @@ import { AccountComponent } from './account/account.component';
 import { WelcomeComponent} from './welcome/welcome.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { FriendAccountComponent } from './friend-account/friend-account.component';
 
 const appRoutes: Routes = [
   {
@@ -30,6 +31,10 @@ const appRoutes: Routes = [
   {
     path: 'account/:id',
     component: AccountComponent
+  },
+  {
+    path: 'account/:id/:friend',
+    component: FriendAccountComponent
   }
 
 ];
