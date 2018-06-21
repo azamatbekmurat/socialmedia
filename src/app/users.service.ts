@@ -7,6 +7,7 @@ import { AuthenticationService } from './authentication.service';
 @Injectable()
 export class UsersService {
   users: FirebaseListObservable<any[]>;
+  userId: string;
 
 
   constructor(private database: AngularFireDatabase,public afAuth: AuthenticationService) {
@@ -17,8 +18,10 @@ export class UsersService {
     return this.users;
   }
 
-  addUser(newUser: User) {
-   this.users.push(newUser);
+  addUser(newUser: User, localstorage:String) {
+  //  this.users.push(newUser);
+  this.database.object("userAccounts/"+localstorage).set({userBirthday:newUser.userBirthDay,userGender:newUser.userGender, userLastName:newUser.userLastName, username:newUser.username});
+
  }
 
   getUserById(userId: string){
@@ -38,10 +41,12 @@ export class UsersService {
   // }
 
   addNewUser(newUser: User) {
-
+  // this.users.("123").set({newUser});
    let uid: string = this.afAuth.authState.uid;
+  //  this.database.object('userAccunts/hello').set({newUser});
+
     // this.database.list('userAccounts/${uid}/').set(newUser);
-    this.users.push(newUser);
+    // this.users.push(newUser);
   }
 
   getLastUser() {
@@ -71,5 +76,10 @@ export class UsersService {
   //   return output;
   //
   // }
+  getUsers1(): FirebaseListObservable<User[]> {
+    if(!this.userId) return;
+    this.users = this.database.list(`userAccounts/${this.userId}`);
+    return this.users;
+  }
 
 }

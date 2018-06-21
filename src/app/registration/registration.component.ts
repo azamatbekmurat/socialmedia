@@ -28,9 +28,9 @@ export class RegistrationComponent implements OnInit {
 
   }
 
-  submitForm(username: string, userLastName: string, email: string, password: string, userBirthDay: string, userGender: string) {
-     var newUser: User = new User(username, userLastName, email, password, userBirthDay, userGender);
-     this.usersService.addUser(newUser);
+  submitForm(username: string, userLastName: string, userBirthDay: string, userGender: string) {
+     var newUser: User = new User(username, userLastName, userBirthDay, userGender);
+     this.usersService.addUser(newUser,localStorage.fireBaseToken);
 
      let that = this;
 
