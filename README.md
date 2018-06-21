@@ -15,8 +15,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
-* Navigate to the root of the clone project in a terminal
-* Run '$npm install'
+`git clone https://github.com/azamatbekmurat/socialmedia.git`
+
+* Navigate to the root of the clone project in a terminal with
+`cd socialmedia`
+
+* Run `npm install`
+
 * Create a database for this project on Google Firebase account
 * Create 'userAccounts', 'connections' and 'posts' nodes in Firebase database
 * Create a 'api-keys.ts' file at 'socialmedia/src/app' directory
