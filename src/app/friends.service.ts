@@ -9,7 +9,7 @@ export class FriendsService {
 
 
   constructor(private database: AngularFireDatabase) {
-      this.friends = database.list('connections');
+      this.friends = database.list('connections/');
       // console.log(this.friends);
   }
 
@@ -24,10 +24,10 @@ export class FriendsService {
             output.push(connection.user1key);
           }
       });
-  });
-  setTimeout(function(){console.log(output);}, 300);
-  console.log(output);
-  return output;
+    });
+
+    setTimeout(function(){console.log(output);}, 300);
+    return output;
   }
 
 }

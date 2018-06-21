@@ -1,4 +1,4 @@
-{ "connections": [{
+[{
     "user1key": "2",
     "user2key": "3"
   }, {
@@ -11,4 +11,3 @@
     "user1key": "1",
     "user2key": "2"
   }]
-}

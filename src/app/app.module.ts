@@ -8,7 +8,6 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AccountComponent } from './account/account.component';
@@ -16,6 +15,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { FriendsListComponent } from './friends-list/friends-list.component';
 import { SearchResultComponent } from './search-result/search-result.component';
+import { PostListComponent } from './post-list/post-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +32,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     RegistrationComponent,
     FriendsListComponent,
-    SearchResultComponent
+    SearchResultComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
