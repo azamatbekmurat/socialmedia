@@ -22,16 +22,14 @@ export class FriendsListComponent implements OnInit {
   constructor(private route: ActivatedRoute, private friendsService: FriendsService, private usersService: UsersService) { }
 
   ngOnInit() {
-    //console.log("Hello");
     this.route.params.forEach((urlParameters) => {
       this.userId=urlParameters['id'];
-      // console.log(this);
     });
 
     let friend;
     var that = this;
-    console.log("Hello");
     var foundFriendsKeys = this.friendsService.getFriendsOfThisUser(this.userId);
+    console.log(foundFriendsKeys);
     var componentScope = this;
 
     setTimeout(function(){
@@ -46,28 +44,6 @@ export class FriendsListComponent implements OnInit {
       })
       console.log(componentScope.friends);
     }, 1000);
-
-
-    // setTimeout(function(){for (var key of arr)
-    //     {
-    //   that.usersService.getUserById(data).subscribe(data1=>{
-    //   data1.forEach(connection){
-    //
-    //   }
-    // });
-    // friend = that.usersService.getUserById(key);
-    // this.friends.push(friend);
-    // console.log(this.friends[0].userName);
-    // };}, 300);
-
-    // this.friendsService.getFriendsOfThisUser(this.userId).forEach(key => {
-    //   console.log("Hello");
-    //   friend = this.usersService.getUserById(key);
-    //   this.friends.push(friend);
-    //   console.log(this.friends[0]);
-    // })
-
-
 
   }
 }

@@ -7,10 +7,12 @@ import { Router, RouterModule } from '@angular/router';
 export class AuthenticationService {
   user: Observable<firebase.User>;
   authState: any = null;
+  token;
 
 
   constructor(public afAuth: AngularFireAuth, public routes:Router) {
     this.user = afAuth.authState;
+    
   }
 
   login() {
@@ -18,12 +20,17 @@ export class AuthenticationService {
   }
 
   logout() {
+    localStorage.setItem('fireBaseToken', null );
     this.afAuth.auth.signOut();
   }
   signUpWithEmail(email: string, password: string) {
     return this.afAuth.auth.createUserWithEmailAndPassword(email, password)
       .then((user) => {
         this.authState = user;
+        this.loginWithEmail(email,password);
+        localStorage.setItem('fireBaseToken', this.authState.uid);
+        console.log("hello");
+        location.reload();
       })
       .catch(error => {
         console.log(error)
@@ -35,6 +42,8 @@ export class AuthenticationService {
       .then((user) => {
         this.authState = user;
         console.log(this.routes);
+        console.log(this.authState);
+        localStorage.setItem('fireBaseToken', this.authState.uid);
         this.routes.navigate(["account",this.authState.uid])
         console.log(this.authState.uid);
         

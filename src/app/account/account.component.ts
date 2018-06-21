@@ -25,18 +25,24 @@ export class AccountComponent implements OnInit {
     // private location: Location,
     private authenticationService: AuthenticationService,
     private postsService: PostsService,
-    private userService: UsersService
+    private userService: UsersService,
+    private router: Router
   ) { }
 
   ngOnInit() {
     // console.log("hello");
     this.route.params.forEach((urlParameters) => {
       this.userId=urlParameters['id'];
+      console.log(this.authenticationService.authState);
     });
     this.userService.getUserById(this.userId).subscribe(dataLastEmitted => {
       console.log(dataLastEmitted.username);
       this.userName = dataLastEmitted.username;
     });
+  }
+
+  goToSearchList() {
+    this.router.navigate(['account', this.userId, 'search']);
   }
 
 

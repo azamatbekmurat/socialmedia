@@ -17,10 +17,13 @@ export class RegistrationComponent implements OnInit {
   //userAccounts: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   userAccount;
+  token;
 
   constructor(private authService: AuthenticationService, private usersService: UsersService, private router: Router) { }
 
   ngOnInit() {
+    this.token = localStorage.fireBaseToken;
+    console.log(this.token);
 
   }
 
@@ -35,11 +38,17 @@ export class RegistrationComponent implements OnInit {
        that.usersService.getLastUser().forEach(function(information) {
          information.forEach(function(data) {
            console.log(data.$key);
-           that.router.navigate(['account',data.$key]);
+           that.router.navigate(['account',localStorage.fireBaseToken]);
          });
        });
 
      }, 1000);
+   }
+
+   signup(email, password){
+     this.authService.signUpWithEmail(email,password);
+
+
    }
 
   //  Test(){

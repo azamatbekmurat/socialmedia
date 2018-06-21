@@ -56,9 +56,9 @@ export class UsersService {
 
   }
 
-  getAllUsers() {
-    return this.database.list('userAccounts');
-  }
+  // getAllUsers() {
+  //   return this.database.list('userAccounts');
+  // }
 
 
 

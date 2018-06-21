@@ -17,15 +17,15 @@ export class FriendsService {
     let output: string[] = [];
     this.friends.subscribe(data => {
       data.forEach(connection => {
-          //console.log(connection);
+          console.log(connection);
           if (connection.user1key == userId) {
             output.push(connection.user2key);
-          } else if (connection.user2key==userId) {
+          } else if (connection.user2key == userId) {
             output.push(connection.user1key);
           }
-      })
+      });
   });
-  // setTimeout(function(){console.log(output);}, 300);
+  setTimeout(function(){console.log(output);}, 300);
   return output;
   }
 
