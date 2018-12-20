@@ -12,7 +12,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Link to Firebase Deployment of application
 
-* .firebaseapp.com
+* https://socialmedia-d39ef.firebaseapp.com/
 
 ## Setup/Installation Requirements
 
